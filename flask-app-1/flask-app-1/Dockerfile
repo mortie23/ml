@@ -10,11 +10,12 @@ RUN pip install "poetry==$POETRY_VERSION"
 
 WORKDIR /
 COPY poetry.lock pyproject.toml app.py /
-
-COPY /templates /templates
+COPY lib lib/
+COPY templates templates/
 
 # Project initialization:
 RUN poetry config virtualenvs.create false \
   && poetry install --no-dev
 
-CMD ["poetry", "run", "app.py"]
+EXPOSE 5000
+CMD ["gunicorn", "-b 0.0.0.0:5000", "app:app"]

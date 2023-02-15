@@ -10,6 +10,7 @@ python = "^3.8"
 flask = "^2.2.2"
 pytest = "^7.2.1"
 helloworld = {path = "../../lib/helloworld", develop = true}
+gunicorn = "^20.1.0"
 
 
 [build-system]
