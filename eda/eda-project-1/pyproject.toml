@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-app-1"
+name = "eda-project-1"
 version = "0.0.1"
 description = ""
 authors = ["Christopher Mortimer <christopher@mortimer.xyz>"]
@@ -7,10 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pytest = "^7.2.1"
-flask = "^2.2.2"
 helloworld = {path = "../../lib/helloworld", develop = true}
-gunicorn = "^20.1.0"
+ipykernel = "^6.21.2"
+
 
 [build-system]
 requires = ["poetry-core"]

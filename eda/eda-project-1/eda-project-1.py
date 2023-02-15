@@ -1,8 +1,7 @@
 # %%
-import sayhello.hello as sh
-
+import helloworld.helloworld as hw
 
 # %%
-hello_message = sh.hello('christopher')
+hello_message = hw.helloworld('christopher')
 
 # %%

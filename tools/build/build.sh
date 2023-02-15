@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 project=${1}
 echo ${project}
