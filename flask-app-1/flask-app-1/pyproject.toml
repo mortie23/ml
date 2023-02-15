@@ -1,16 +1,15 @@
 [tool.poetry]
-name = "myml"
+name = "flask-app-1"
 version = "0.0.1"
 description = ""
 authors = ["Christopher Mortimer <christopher@mortimer.xyz>"]
 readme = "README.md"
-#packages = [{include = "flask-app-1"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 flask = "^2.2.2"
-helloworld = { path = "./lib/helloworld/", develop = true }
 pytest = "^7.2.1"
+helloworld = {path = "../../lib/helloworld", develop = true}
 
 
 [build-system]
