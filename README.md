@@ -185,6 +185,26 @@ Now, when you run the cells, you should see that the internal package can be suc
 
 ![](docs/vscode-jupyter-interactive.png)
 
+## Internal package unit testing
+
+To test each function in the internal package we have included pytest and an example unit test.
+
+```sh
+cd lib/helloworld
+pytest
+```
+
+```log
+=================================== test session starts ====================================
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0
+rootdir: /mnt/c/git/github/mortie23/ml/lib/helloworld
+collected 1 item
+
+tests/test_helloworld.py .                                                           [100%]
+
+==================================== 1 passed in 0.09s =====================================
+```
+
 ## Internal package dependency
 
 Since we are using poetry to manage the internal package as a dependency in the mono repo, it works in development mode on own local client machine, however when deploying the application using a Docker container, it will not have access to the internal package.

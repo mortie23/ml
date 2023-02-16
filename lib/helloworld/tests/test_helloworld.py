@@ -1,6 +1,6 @@
-import sayhello.hello as sh
+import helloworld.helloworld as hw
 
 
 def test_hello():
-    hello_message = sh.hello('christopher')
-    assert hello_message == 'Hello christopher'
+    hello_message = hw.helloworld('christopher')
+    assert hello_message == 'Hello world christopher'
