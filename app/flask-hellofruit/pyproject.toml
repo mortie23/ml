@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hellofruit"
+version = "0.1.0"
+description = "A Flask web application that displays a random fruit"
+authors = ["Christopher Mortimer <christopher@mortimer.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+flask = "^2.2.2"
+gunicorn = "^20.1.0"
+fruitbowl = { path = "../../lib/fruitbowl", develop = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

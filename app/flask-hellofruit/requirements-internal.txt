@@ -1,0 +1,2 @@
+--index-url https://australia-southeast1-python.pkg.dev/prj-xyz-dev-fruit-0/rpo-xyz-dev-fruit-pyn-0/simple/
+fruitbowl
