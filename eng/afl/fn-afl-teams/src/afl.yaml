@@ -1,0 +1,3 @@
+project_id: prj-xyz-<env>-fruit-0
+dataset_name: afl
+table_name: teams
