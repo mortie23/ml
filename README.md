@@ -1,23 +1,33 @@
 # Mono repo with Python Poetry
 
-What we are looking to do is create a code repository that can be used as the source for many Python applications (Flask deployed with Docker) and exporitory data analysis that can share a common library of functions.
+What we are looking to do is create a code repository that can be used as the source for many Python applications (Flask deployed with Docker) and exploratory data analysis that can share a common library of functions.
 Pretty much all the credit for this comes from the following article, where Dan Hipschman goes through the process that Opendoor went through to create a mono repo.
 
 [Source](https://medium.com/opendoor-labs/our-python-monorepo-d34028f2b6fa)
 
 ```txt
 📁ml
-├── 📁eda  # Each exploratory data analysis task has a directory here
-│   ├── 📁eda-project-1
-│   │   ├── eda-project-1.py  # Each eda project has Python scripts
-│   │   ├── pyproject.toml  # Each eda project has its own dependencies
-│   └── 📁eda-project-2 ...
 ├── 📁app  # Each application has a directory here
 │   ├── 📁flask-app-1
 │   │   ├── app.py  # Each application has an app entry point
 │   │   ├── Dockerfile  # Each application has a Dockerfile
 │   │   ├── pyproject.toml  # Each eda project has its own dependencies
 │   └── 📁flask-app-2 ...
+├── 📁docs # Documentation as a series of markdown files
+│   ├── README.md
+├── 📁eda  # Each exploratory data analysis task has a directory here
+│   ├── 📁eda-project-1
+│   │   ├── eda-project-1.py  # Each eda project has Python scripts
+│   │   ├── pyproject.toml  # Each eda project has its own dependencies
+│   └── 📁eda-project-2 ...
+├── 📁eng  # Each data engineering task including sourcing and curation
+│   ├── 📁eng-task-1
+│   │   ├── eda-project-1.py  # Each eda project has Python scripts
+│   │   ├── pyproject.toml  # Each eda project has its own dependencies
+│   └── 📁eng-task-2 ...
+├── 📁infra  # Infrastructure managed by IaC solution (Terraform in this case)
+│   ├── 📁tf
+│   │   ├── main.tf  # Separate Terraform module files
 ├── 📁lib  # Each lib is a Python package that you can install using poetry (or pip)
 │   ├── 📁helloworld  #
 │   │   ├── pyproject.toml  # Each lib specifies its dependencies
