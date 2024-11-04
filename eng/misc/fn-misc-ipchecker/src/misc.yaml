@@ -1,0 +1,4 @@
+project_id: prj-xyz-<env>-misc-ip-1
+dataset_name: demo
+table_name: ipchecker
+base_url: https://api64.ipify.org/?format=json
