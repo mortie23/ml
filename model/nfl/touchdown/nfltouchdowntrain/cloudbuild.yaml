@@ -1,0 +1,20 @@
+steps:
+  # Step 1: Retrieve the ser
+  - id: "Build Docker Image"
+    name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "--network=cloudbuild"
+      - "--build-arg"
+      - "env=${_ENV}"
+      - "--build-arg"
+      - "project_id=prj-xyz-${_ENV}-nfl-0"
+      - "-t"
+      - "australia-southeast1-docker.pkg.dev/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/train/ls-ranking:latest"
+      - "."
+
+substitutions:
+  _ENV: env
+
+images:
+  - "australia-southeast1-docker.pkg.dev/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/train/ls-ranking:latest"

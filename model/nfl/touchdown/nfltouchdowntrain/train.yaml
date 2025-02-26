@@ -1,0 +1,3 @@
+staging_bucket_name: bkt-xyz-<env>-nfl-vertex-0
+source_dataset: cur
+source_table: game_stats
