@@ -1,0 +1,11 @@
+steps:
+  - name: "australia-southeast1-docker.pkg.dev/prj-xyz-shr-rep-0/rpo-bld-dkr-0/poetry-pypkg"
+    args: ["build"]
+
+options:
+  logging: GCS_ONLY
+
+artifacts:
+  pythonPackages:
+    - repository: "https://australia-southeast1-python.pkg.dev/prj-xyz-shr-rep-0/rpo-py-0"
+      paths: ["dist/*"]
