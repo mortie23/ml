@@ -5,3 +5,17 @@ resource "google_service_account" "gsvc_misc_ip_cf" {
   account_id   = "gsvc-xyz-${var.env}-misc-ip-cf"
   display_name = "Cloud Function Service Account"
 }
+
+# NFL
+## Dataform
+resource "google_service_account" "gsvc_nfl_df" {
+  project      = google_project.nfl_0.project_id
+  account_id   = "gsvc-xyz-${var.env}-nfl-df"
+  display_name = "Dataform Service Account for NFL"
+}
+## Cloud Build
+resource "google_service_account" "gsvc_nfl_cb" {
+  project      = google_project.nfl_0.project_id
+  account_id   = "gsvc-xyz-${var.env}-nfl-cb"
+  display_name = "Cloud Build Service Account for NFL"
+}
