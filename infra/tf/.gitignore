@@ -1,4 +1,4 @@
 .terraform
-env-*
+*.tfvars
 *.tfstate*
 *.lock.hcl
