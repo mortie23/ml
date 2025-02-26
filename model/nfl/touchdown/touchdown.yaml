@@ -1,0 +1,11 @@
+workload: NFL Touchdown modelling
+# Project default configurations
+location: australia-southeast1
+project_id: prj-xyz-<env>-nfl-0
+artifact_registry_repository: rpo-xyz-<env>-nfl-dkr-0
+train_container_image: train/nfl-touchdown:latest
+predict_container_image: predict/nfl-touchdown:latest
+# Defaults
+defaults:
+  - _self_
+  - train/train@train
