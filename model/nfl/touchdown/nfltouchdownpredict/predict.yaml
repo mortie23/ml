@@ -1,0 +1,2 @@
+staging_bucket_name: bkt-xyz-<env>-nfl-vertex-0
+model_file_name: model.joblib

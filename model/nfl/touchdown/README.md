@@ -2,6 +2,15 @@
 
 A way to implement a custom model in Vertex AI with custom Docker images.
 
+## Getting started
+
+Create an environment variable file.
+For the development environment (running on a local development machine) we need to mock the environment for the Vertex AI service.
+
+`.env`
+
+Use the contents of the `.env.example` file.
+
 ## Training
 
 We have built a custom training image ignoring the standard Google provided base image. This is because we found a lot of issues with the pre-built images that Google provides. For example trying to use:
