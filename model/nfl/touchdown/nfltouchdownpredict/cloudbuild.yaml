@@ -9,11 +9,11 @@ steps:
       - "--build-arg"
       - "project_id=prj-xyz-${_ENV}-nfl-0"
       - "-t"
-      - "australia-southeast1-docker.pkg.${_ENV}/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/predict/ls-ranking:latest"
+      - "australia-southeast1-docker.pkg.${_ENV}/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/predict/nfl-touchdown:latest"
       - "."
 
 substitutions:
   _ENV: dev
 
 images:
-  - "australia-southeast1-docker.pkg.${_ENV}/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/predict/ls-ranking:latest"
+  - "australia-southeast1-docker.pkg.${_ENV}/prj-xyz-${_ENV}-nfl-0/rpo-xyz-${_ENV}-nfl-dkr-0/predict/nfl-touchdown:latest"
