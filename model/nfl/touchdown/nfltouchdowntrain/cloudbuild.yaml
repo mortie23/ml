@@ -1,5 +1,4 @@
 steps:
-  # Step 1: Retrieve the ser
   - id: "Build Docker Image"
     name: "gcr.io/cloud-builders/docker"
     args:
