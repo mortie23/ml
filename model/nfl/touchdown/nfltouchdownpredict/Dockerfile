@@ -20,7 +20,7 @@ ENV NLTK_DATA=/usr/share/nltk_data
 COPY --from=base /build /build
 
 # These will be set by Vertex at time to include correct environment
-#ENV AIP_STORAGE_URI=gs://bkt-herdml-dev-edap-herd-gnl-vertex-0/aiplatform-custom-training-yyyy-mm-dd-hh:mm:ss.ms/model
+#ENV AIP_STORAGE_URI=gs://bkt-xyz-dev-nfl-0/aiplatform-custom-training-yyyy-mm-dd-hh:mm:ss.ms/model
 #ENV AIP_HEALTH_ROUTE=
 #ENV AIP_PREDICT_ROUTE=
 #ENV AIP_HTTP_PORT=
