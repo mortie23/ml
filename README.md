@@ -41,12 +41,12 @@ Pretty much all the credit for this comes from the following article, where Dan 
 │   │   │   ├── test_helloworld.py
 │   │   ├── pyproject.toml  # Each lib specifies its dependencies
 │   └── 📁lib-2 ...
-├── 📁model  # Infrastructure managed by IaC solution (Terraform in this case)
+├── 📁model  # Machine Learning models
 │   ├── 📁<project/program> # name of project or program within mono repo
-│   │   ├── 📁<model>
-│   │   │   ├── 📁<package>
-│   │   │   ├── 📁<train-image>
-│   │   │   ├── 📁<predict-image>
+│   │   ├── 📁<model> # Model
+│   │   │   ├── 📁<package> # Python package with modules reused across train and predict like preprocessors
+│   │   │   ├── 📁<train-image> # Training Docker image
+│   │   │   ├── 📁<predict-image> # Prediction Docker image
 └── 📁tools
     ├── 📁build  # Application build script
 ```
