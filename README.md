@@ -8,35 +8,45 @@ Pretty much all the credit for this comes from the following article, where Dan 
 ```txt
 📁ml
 ├── 📁app  # Each application has a directory here
-│   ├── 📁flask-app-1
-│   │   ├── app.py  # Each application has an app entry point
-│   │   ├── Dockerfile  # Each application has a Dockerfile
-│   │   ├── pyproject.toml  # Each eda project has its own dependencies
-│   └── 📁flask-app-2 ...
+│   ├── 📁<project/program> # name of project or program within mono repo
+│   │   ├── 📁flask-app-1
+│   │   │   ├── app.py  # Each application has an app entry point
+│   │   │   ├── Dockerfile  # Each application has a Dockerfile
+│   │   │   ├── pyproject.toml  # Each eda project has its own dependencies
+│   │   └── 📁flask-app-2 ...
 ├── 📁docs # Documentation as a series of markdown files
 │   ├── README.md
 ├── 📁eda  # Each exploratory data analysis task has a directory here
-│   ├── 📁eda-project-1
-│   │   ├── eda-project-1.py  # Each eda project has Python scripts
-│   │   ├── pyproject.toml  # Each eda project has its own dependencies
-│   └── 📁eda-project-2 ...
+│   ├── 📁<project/program> # name of project or program within mono repo
+│   │   ├── 📁eda-project-1
+│   │   │   ├── eda-project-1.py  # Each eda project has Python scripts
+│   │   │   ├── pyproject.toml  # Each eda project has its own dependencies
+│   │   └── 📁eda-project-2 ...
 ├── 📁eng  # Each data engineering task including sourcing and curation
-│   ├── 📁eng-task-1
-│   │   ├── eda-project-1.py  # Each eda project has Python scripts
-│   │   ├── pyproject.toml  # Each eda project has its own dependencies
-│   └── 📁eng-task-2 ...
+│   ├── 📁<project/program> # name of project or program within mono repo
+│   │   ├── 📁eng-task-1
+│   │   │   ├── eda-project-1.py  # Each eda project has Python scripts
+│   │   │   ├── pyproject.toml  # Each eda project has its own dependencies
+│   │   └── 📁eng-task-2 ...
 ├── 📁infra  # Infrastructure managed by IaC solution (Terraform in this case)
 │   ├── 📁tf
-│   │   ├── main.tf  # Separate Terraform module files
+│   │   ├── 📁<cloud-provider>/
+│   │   │   ├── main.tf  # Separate Terraform module files
 ├── 📁lib  # Each lib is a Python package that you can install using poetry (or pip)
 │   ├── 📁helloworld  #
-│   │   ├── pyproject.toml  # Each lib specifies its dependencies
 │   │   ├── 📁helloworld/
 │   │   │   ├── __init__.py
 │   │   │   ├── helloworld.py
 │   │   └── 📁tests/
 │   │   │   ├── test_helloworld.py
+│   │   ├── pyproject.toml  # Each lib specifies its dependencies
 │   └── 📁lib-2 ...
+├── 📁model  # Infrastructure managed by IaC solution (Terraform in this case)
+│   ├── 📁<project/program> # name of project or program within mono repo
+│   │   ├── 📁<model>
+│   │   │   ├── 📁<package>
+│   │   │   ├── 📁<train-image>
+│   │   │   ├── 📁<predict-image>
 └── 📁tools
     ├── 📁build  # Application build script
 ```
