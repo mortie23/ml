@@ -57,7 +57,7 @@ def trigger_build(
     # ? The Python SDK for Cloud Build does not automatically zip the Dockerfile etc to Cloud storage
     # ? gcloud does
     # Creating temporary archive of 14 file(s) totalling 13.9 MiB before compression.
-    # Uploading tarball of [.] to [gs://prj-herdml-dev-edap-herd-hs-0_cloudbuild/source/1739408815.629512-e36d0be34fc04e9a868db549f738d77b.tgz]
+    # Uploading tarball of [.] to [gs://prj-xyz-dev-nfl-0_cloudbuild/source/<guid-hash>.tgz]
     # ? For now, just use the gcloud cli through the shell script in each directory
 
     operation = client.create_build(
