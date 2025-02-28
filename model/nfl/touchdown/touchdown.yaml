@@ -8,4 +8,5 @@ predict_container_image: predict/nfl-touchdown:latest
 # Defaults
 defaults:
   - _self_
-  - train/train@train
+  - nfltouchdowntrain/train@train
+  - nfltouchdownpredict/predict@predict

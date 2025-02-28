@@ -87,3 +87,11 @@ resource "google_project_service" "nfl_cloud_build" {
   disable_on_destroy         = true
   disable_dependent_services = true
 }
+
+## Vertex AI
+resource "google_project_service" "nfl_vertex_ai" {
+  project                    = google_project.nfl_0.project_id
+  service                    = "aiplatform.googleapis.com"
+  disable_on_destroy         = true
+  disable_dependent_services = true
+}
