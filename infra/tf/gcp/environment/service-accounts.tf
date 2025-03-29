@@ -19,3 +19,9 @@ resource "google_service_account" "gsvc_nfl_cb" {
   account_id   = "gsvc-xyz-${var.env}-nfl-cb"
   display_name = "Cloud Build Service Account for NFL"
 }
+## Vertex AI
+resource "google_service_account" "gsvc_nfl_vt" {
+  project      = google_project.nfl_0.project_id
+  account_id   = "gsvc-xyz-${var.env}-nfl-vt"
+  display_name = "Vertex AI Service Account for NFL"
+}

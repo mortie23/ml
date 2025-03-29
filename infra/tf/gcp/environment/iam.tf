@@ -155,3 +155,33 @@ resource "google_project_iam_member" "service_account_nfl_cb_rep_artifactregistr
   role    = "roles/artifactregistry.writer"
   member  = "serviceAccount:${google_service_account.gsvc_nfl_cb.email}"
 }
+
+## Vertex AI
+resource "google_project_iam_member" "service_account_nfl_vt_aiplatform_user" {
+  project = google_project.nfl_0.project_id
+  role    = "roles/aiplatform.user"
+  member  = "serviceAccount:${google_service_account.gsvc_nfl_vt.email}"
+}
+resource "google_project_iam_member" "service_account_nfl_vt_artifactregistry_reader" {
+  project = google_project.nfl_0.project_id
+  role    = "roles/artifactregistry.reader"
+  member  = "serviceAccount:${google_service_account.gsvc_nfl_vt.email}"
+}
+resource "google_project_iam_member" "service_account_nfl_vt_storage_objectviewer" {
+  project = google_project.nfl_0.project_id
+  role    = "roles/storage.objectViewer"
+  member  = "serviceAccount:${google_service_account.gsvc_nfl_vt.email}"
+}
+# Allow Vertex service account to read from shared repository
+resource "google_project_iam_member" "service_account_nfl_vt_rep_artifactregistry_reader" {
+  project = "prj-xyz-shr-rep-0"
+  role    = "roles/artifactregistry.reader"
+  member  = "serviceAccount:${google_service_account.gsvc_nfl_vt.email}"
+}
+
+# Allow Cloud Run Service Agent to read from shared repository
+resource "google_project_iam_member" "service_account_nfl_cr_rep_artifactregistry_reader" {
+  project = "prj-xyz-shr-rep-0"
+  role    = "roles/artifactregistry.reader"
+  member  = "serviceAccount:service-${google_project.nfl_0.number}@serverless-robot-prod.iam.gserviceaccount.com"
+}
