@@ -2,7 +2,7 @@
 ## Model prediction service
 resource "google_cloud_run_service" "cr_nfl_predict" {
   project  = google_project.nfl_0.project_id
-  name     = "nfl-predict"
+  name     = "nfl-touchdown"
   location = var.region
 
   template {
