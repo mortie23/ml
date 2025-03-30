@@ -66,7 +66,7 @@ locals {
     nfltouchdown_cloudrun = "${path.module}/bigquery-sql/mdl.nfltouchdown_cloudrun.sql"
     # Add more SQL files as needed
   }
-  service_url = "https://nfl-predict-${google_project.nfl_0.number}.${var.region}.run.app"
+  service_url = "https://nfl-touchdown-${google_project.nfl_0.number}.${var.region}.run.app"
 }
 
 resource "random_id" "create_model_cloud_job_id" {
@@ -74,7 +74,7 @@ resource "random_id" "create_model_cloud_job_id" {
 
   # Manually bump this version when you need to re-run the create model SQL
   keepers = {
-    version = "v1.0"
+    version = "v1.1"
   }
 }
 

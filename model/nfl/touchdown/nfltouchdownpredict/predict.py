@@ -23,9 +23,10 @@ Example response from Vertex call:
 """
 
 # %%
-from fastapi import FastAPI, Request
-from pydantic import BaseModel, Field
-from typing import Any, List
+from fastapi import FastAPI, Request, HTTPException
+from pydantic import BaseModel, Field, ValidationError
+from typing import Any, List, Optional
+import pandas as pd
 
 import joblib
 import json
@@ -77,6 +78,31 @@ class VertexPredictionRequest(BaseModel):
         ],
     )
 
+
+class BigQueryRemoteRequest(BaseModel):
+    requestId: str = Field(..., example="unique-request-id")
+    caller: str = Field(
+        ..., example="//bigquery.googleapis.com/projects/your-project/jobs/your-job"
+    )
+    sessionUser: str = Field(None, example="user@example.com")
+    calls: List[List[List[ModelInputItem]]] = Field(
+        ...,
+        example=[
+            [
+                [
+                    {
+                        "game_team_id": 411,
+                        "total_first_downs": 26,
+                        "total_yards": 419,
+                        "interceptions": 0,
+                        "punts": 4,
+                    }
+                ]
+            ]
+        ],
+    )
+
+
 with open("model.joblib", "wb") as model_f:
     client.download_blob_to_file(
         f"{os.environ['AIP_STORAGE_URI']}/model.joblib", model_f
@@ -91,34 +117,48 @@ def health():
 
 
 @app.post("/")
-async def predict_root(
-    input_data: ModelInputItem,
+async def predict_bigquery(
+    input_data: BigQueryRemoteRequest,
 ) -> dict[str, Any]:
     """
-    Root endpoint for single prediction requests.
+    Root endpoint handling BigQuery remote function calls.
 
     Args:
-        input_data: Single game stats for prediction
+        input_data: BigQuery remote function request format
 
     Returns:
-        dict[str, Any]: Prediction result with game_team_id
+        dict[str, Any]: Batch prediction results in BigQuery format
     """
-    # Convert input to feature array
-    features = np.array(
-        [
-            [
-                input_data.total_first_downs,
-                input_data.total_yards,
-                input_data.interceptions,
-                input_data.punts,
-            ]
-        ]
-    )
+    replies = []
 
-    # Generate prediction
-    prediction: np.ndarray = _model.predict(features)
+    for call_group in input_data.calls:
+        combined_reply = []
+        for sub_list in call_group:
+            features = np.array(
+                [
+                    [
+                        item.total_first_downs,
+                        item.total_yards,
+                        item.interceptions,
+                        item.punts,
+                    ]
+                    for item in sub_list
+                ]
+            )
 
-    return {"game_team_id": input_data.game_team_id, "prediction": prediction[0]}
+            if len(features) == 0:
+                continue
+
+            predictions: np.ndarray = _model.predict(features)
+
+            for item, pred in zip(sub_list, predictions):
+                combined_reply.append(
+                    {"game_team_id": item.game_team_id, "prediction": float(pred)}
+                )
+
+        replies.append(combined_reply)
+
+    return {"replies": replies}
 
 
 @app.post(os.environ["AIP_PREDICT_ROUTE"])
@@ -152,7 +192,7 @@ async def predict_vertex(
 
     # Pair predictions with game_team_ids
     results = [
-        {"game_team_id": instance.game_team_id, "prediction": pred}
+        {"game_team_id": instance.game_team_id, "prediction": float(pred)}
         for instance, pred in zip(input_data.instances, predictions)
     ]
 

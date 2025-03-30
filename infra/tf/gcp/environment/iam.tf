@@ -185,3 +185,10 @@ resource "google_project_iam_member" "service_account_nfl_cr_rep_artifactregistr
   role    = "roles/artifactregistry.reader"
   member  = "serviceAccount:service-${google_project.nfl_0.number}@serverless-robot-prod.iam.gserviceaccount.com"
 }
+
+## Allow BigQuery connection to invoke Cloud Run
+resource "google_project_iam_member" "service_account_nfl_bqml_run_invoker" {
+  project = google_project.nfl_0.project_id
+  role    = "roles/run.invoker"
+  member  = "serviceAccount:${google_bigquery_connection.cloudrun_connection.cloud_resource[0].service_account_id}"
+}
