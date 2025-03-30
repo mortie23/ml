@@ -55,14 +55,26 @@ client = storage.Client(os.environ["project_id"])
 
 
 # Define a model input schema with example data
-class ModelInput(BaseModel):
-    # Example input for Swagger UI
-    instances: List[List[float]] = Field(
+class ModelInputItem(BaseModel):
+    game_team_id: int = Field(..., example=411)
+    interceptions: int = Field(..., example=0)
+    punts: int = Field(..., example=4)
+    total_first_downs: int = Field(..., example=26)
+    total_yards: int = Field(..., example=419)
+
+
+class VertexPredictionRequest(BaseModel):
+    instances: List[ModelInputItem] = Field(
         ...,
-        description="A list of feature arrays to predict outcomes for.",
-        examples=[
-            [[23.0, 150.0, 1.0, 20.0], [33.0, 400.0, 1.0, 2.0]],
-        ],  # Directly the field value, not wrapped in another object
+        example=[
+            {
+                "game_team_id": 411,
+                "interceptions": 0,
+                "punts": 4,
+                "total_first_downs": 26,
+                "total_yards": 419,
+            }
+        ],
     )
 
 
@@ -79,27 +91,70 @@ def health():
     return {"status": "healthy"}
 
 
-@app.post(os.environ["AIP_PREDICT_ROUTE"])
-async def predict(
-    input_data: ModelInput,
+@app.post("/")
+async def predict_root(
+    input_data: ModelInputItem,
 ) -> dict[str, Any]:
     """
-    Accepts input data in JSON format, runs predictions using a pre-trained
-    sklearn model, and returns predictions as a JSON response.
+    Root endpoint for single prediction requests.
 
     Args:
-        request (Request): JSON input containing a list of instances.
+        input_data: Single game stats for prediction
 
     Returns:
-        dict[str, Any]: JSON object containing predictions.
+        dict[str, Any]: Prediction result with game_team_id
     """
-    # Convert input data to numpy array
-    data: np.ndarray = np.array(input_data.instances)
+    # Convert input to feature array
+    features = np.array(
+        [
+            [
+                input_data.interceptions,
+                input_data.punts,
+                input_data.total_first_downs,
+                input_data.total_yards,
+            ]
+        ]
+    )
+
+    # Generate prediction
+    prediction: np.ndarray = _model.predict(features)
+
+    return {"game_team_id": input_data.game_team_id, "prediction": prediction[0]}
+
+
+@app.post(os.environ["AIP_PREDICT_ROUTE"])
+async def predict_vertex(
+    input_data: VertexPredictionRequest,
+) -> dict[str, Any]:
+    """
+    Vertex AI endpoint for batch predictions.
+
+    Args:
+        input_data: Batch of game stats for prediction
+
+    Returns:
+        dict[str, Any]: Batch prediction results
+    """
+    # Convert input data to feature arrays
+    features = np.array(
+        [
+            [
+                instance.interceptions,
+                instance.punts,
+                instance.total_first_downs,
+                instance.total_yards,
+            ]
+            for instance in input_data.instances
+        ]
+    )
 
     # Generate predictions
-    predictions: np.ndarray = _model.predict(data)
+    predictions: np.ndarray = _model.predict(features)
 
-    # Convert numpy array to JSON-serializable list
-    response: List[int] = predictions.tolist()
+    # Pair predictions with game_team_ids
+    results = [
+        {"game_team_id": instance.game_team_id, "prediction": pred}
+        for instance, pred in zip(input_data.instances, predictions)
+    ]
 
-    return {"predictions": response}
+    return {"predictions": results}
