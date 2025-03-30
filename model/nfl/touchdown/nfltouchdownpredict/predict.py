@@ -57,10 +57,10 @@ client = storage.Client(os.environ["project_id"])
 # Define a model input schema with example data
 class ModelInputItem(BaseModel):
     game_team_id: int = Field(..., example=411)
-    interceptions: int = Field(..., example=0)
-    punts: int = Field(..., example=4)
     total_first_downs: int = Field(..., example=26)
     total_yards: int = Field(..., example=419)
+    interceptions: int = Field(..., example=0)
+    punts: int = Field(..., example=4)
 
 
 class VertexPredictionRequest(BaseModel):
@@ -69,14 +69,13 @@ class VertexPredictionRequest(BaseModel):
         example=[
             {
                 "game_team_id": 411,
-                "interceptions": 0,
-                "punts": 4,
                 "total_first_downs": 26,
                 "total_yards": 419,
+                "interceptions": 0,
+                "punts": 4,
             }
         ],
     )
-
 
 with open("model.joblib", "wb") as model_f:
     client.download_blob_to_file(
@@ -108,10 +107,10 @@ async def predict_root(
     features = np.array(
         [
             [
-                input_data.interceptions,
-                input_data.punts,
                 input_data.total_first_downs,
                 input_data.total_yards,
+                input_data.interceptions,
+                input_data.punts,
             ]
         ]
     )
@@ -139,10 +138,10 @@ async def predict_vertex(
     features = np.array(
         [
             [
-                instance.interceptions,
-                instance.punts,
                 instance.total_first_downs,
                 instance.total_yards,
+                instance.interceptions,
+                instance.punts,
             ]
             for instance in input_data.instances
         ]
