@@ -1,5 +1,10 @@
+import sys
 import streamlit as st
-from streamlit_posit_app.pages.home import show_home_page  # Updated import path
+
+# Add the package directory to Python path
+sys.path.append("streamlit_posit_app")
+
+from pages.home import show_home_page
 
 
 def main():

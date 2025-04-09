@@ -1,0 +1,12 @@
+{
+    "http://192.168.110.133:3939": {
+        "server_url": "http://192.168.110.133:3939",
+        "filename": "/mnt/c/git/github/mortie23/ml/eda/streamlit-posit-app",
+        "app_url": "http://192.168.110.133:3939/content/a90a5b19-d989-4cf1-99fd-7fa748fadae4/",
+        "app_id": "a90a5b19-d989-4cf1-99fd-7fa748fadae4",
+        "app_guid": "a90a5b19-d989-4cf1-99fd-7fa748fadae4",
+        "title": "streamlit-posit-app",
+        "app_mode": "python-streamlit",
+        "app_store_version": 1
+    }
+}

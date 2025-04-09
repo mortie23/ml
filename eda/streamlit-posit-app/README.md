@@ -1,20 +1,22 @@
 # Python applications published to Posit Connect
 
 This is a simple Streamlit application structured as a modular project and managed using Poetry. The application is designed to be deployed to a Posit Connect server.
+Reference:
+
+- [https://github.com/streamlit/demo-face-gan/blob/master/streamlit_app.py](https://github.com/streamlit/demo-face-gan/blob/master/streamlit_app.py)
+- [https://bookdown.org/**docs**/user/streamlit/](https://bookdown.org/__docs__/user/streamlit/)
 
 ## Project Structure
 
 ```
 📁streamlit-posit-app
 ├── 📁streamlit_posit_app
-│   ├── 📁app
-│   │   ├── __init__.py
-│   │   └── main.py
 │   └── 📁pages
 │       └── __init__.py
 │   │   └── home.py
 ├── 📁tests
 │   └── __init__.py
+├── app.py
 ├── .gitignore
 ├── pyproject.toml
 └── README.md
@@ -52,6 +54,7 @@ Setup our local development environment (WSL2 on Dell XPS Windows 11)
 ```sh
 python3 -m venv ~/venv/posit
 source ~/venv/posit/bin/activate
+pip install poetry
 ```
 
 All packages will be managed by poetry. We created this EDA directory with:
@@ -66,22 +69,31 @@ Then add a package with
 poetry add rsconnect-python
 ```
 
+But we do not do this manually if restoring from this repo:
+
+```sh
+poetry lock && poetry install --no-root
+```
+
 ## Running the App
 
-To run the Streamlit application, use the following command:
+To run the Streamlit application locally, use the following command:
 
-```bash
-streamlit run src/app/main.py
+```sh
+poetry run streamlit run app.py
+# or just
+streamlit run app.py
 ```
 
 ### Deployment
 
 To deploy the app to a Posit Connect server, ensure you have the `rsconnect-python` package listed in your `requirements.txt`. Use the following command to deploy:
 
-```bash
-rsconnect deploy --server 192.168.110.133:3939
+```sh
+# This didn't work
+rsconnect add --name vm --server http://192.168.110.133:3939 --api-key <api-key>
+# This worked
+rsconnect deploy streamlit --server http://192.168.110.133:3939 --api-key <api-key> --entrypoint app.py .
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+![](./img/deployed.png)
