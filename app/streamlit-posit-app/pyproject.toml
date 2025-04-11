@@ -21,6 +21,15 @@ dependencies = [
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["streamlit_posit_app"]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v -s --strict-markers"
