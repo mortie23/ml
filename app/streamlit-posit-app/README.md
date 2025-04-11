@@ -10,13 +10,19 @@ Reference:
 
 ```
 📁streamlit-posit-app
+├── 📁migrations
 ├── 📁streamlit_posit_app
+│   └── 📁database
+│   │   └── __init__.py
+│   │   └── database.py
+│   │   └── model.py
 │   └── 📁pages
-│       └── __init__.py
+│   │   └── __init__.py
 │   │   └── home.py
 ├── 📁tests
 │   └── __init__.py
 ├── app.py
+├── manage_db.py
 ├── .gitignore
 ├── pyproject.toml
 └── README.md
@@ -135,3 +141,76 @@ Deployment completed successfully.
          Direct content URL: http://192.168.110.133:3939/content/a90a5b19-d989-4cf1-99fd-7fa748fadae4/
 Verifying deployed content...   [OK]
 ```
+
+## Database Setup and Management for CRUD functionality
+
+The application uses SQLAlchemy with Alembic for database migrations. Here's how to set up and manage the database:
+
+1. First, ensure you have a `.env` file in the root directory:
+
+```sh
+echo "DATABASE_URL=sqlite:///./tasks.db" > .env
+```
+
+2. Initialize Alembic migrations:
+
+```sh
+cd streamlit-posit-app
+alembic init migrations
+```
+
+3. Use the database management script to initialize and manage the database:
+
+```sh
+# Initialize the database and create tables
+python manage_db.py init
+
+# Create a new migration
+python manage_db.py migrate "add task table"
+
+# Apply migrations
+python manage_db.py upgrade
+```
+
+## Application Features
+
+The Todo application provides basic CRUD (Create, Read, Update, Delete) operations:
+
+### Creating Tasks
+
+- Enter a task in the input field
+- Click "Add Task" to create a new task
+
+### Viewing Tasks
+
+- Tasks are displayed in an interactive grid
+- The grid supports sorting and filtering
+- Task IDs are hidden for cleaner UI
+
+### Updating Tasks
+
+- Click on any task to edit inline
+- Click "Save Changes" to persist modifications
+
+### Deleting Tasks
+
+- Select one or multiple tasks by control clicking them
+- Click "Delete Selected" to remove tasks
+
+### Database Schema
+
+The application uses a simple SQLite database with SQLAlchemy ORM:
+
+```python
+class Task(Base):
+    __tablename__ = "tasks"
+    id = Column(Integer, primary_key=True)
+    task = Column(String(200), nullable=False)
+```
+
+## Developer Notes
+
+- Database files (`*.db`) are excluded from version control
+- Alembic migration files should be committed
+- The application uses environment variables for configuration
+- SQLAlchemy sessions are properly managed and closed

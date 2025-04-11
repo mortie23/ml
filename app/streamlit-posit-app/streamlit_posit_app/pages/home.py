@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, JsCode
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 from database.database import create_task, read_tasks, update_task, delete_task
 
 
@@ -10,7 +10,7 @@ def show_home_page(database_path):
     # Add new task section
     task = st.text_input("Enter a new task")
     if st.button("Add Task"):
-        if task:  # Only add if task is not empty
+        if task:
             create_task(task, database_path)
             st.success("Task added!")
             st.rerun()
@@ -19,33 +19,6 @@ def show_home_page(database_path):
     tasks = read_tasks(database_path)
     if tasks:
         df = pd.DataFrame(tasks, columns=["id", "task"])
-
-        # Custom delete button renderer with callback
-        delete_btn_renderer = JsCode(
-            """
-        class DeleteButtonRenderer {
-            init(params) {
-                this.params = params;
-                this.eGui = document.createElement('button');
-                this.eGui.innerHTML = '🗑️';
-                this.eGui.className = 'btn-delete';
-                this.eGui.style = 'border: none; background: none; color: red; cursor: pointer;';
-                this.eGui.addEventListener('click', () => this.onClick());
-            }
-
-            getGui() {
-                return this.eGui;
-            }
-
-            onClick() {
-                const task_id = this.params.data.id;
-                this.params.api.applyTransaction({
-                    remove: [this.params.data]
-                });
-            }
-        }
-        """
-        )
 
         # Configure grid options
         gb = GridOptionsBuilder.from_dataframe(df)
@@ -57,14 +30,13 @@ def show_home_page(database_path):
             width=400,
             cellStyle={"cursor": "pointer"},
         )
-        gb.configure_column(
-            "actions",
-            headerName="",
-            cellRenderer=delete_btn_renderer,
-            width=70,
-            lockPosition=True,
+        # Add selection column
+        gb.configure_selection(
+            selection_mode="multiple",
+            use_checkbox=True,
+            pre_selected_rows=[],
+            header_checkbox=True,
         )
-
         gridOptions = gb.build()
 
         # Create columns for buttons
@@ -76,7 +48,6 @@ def show_home_page(database_path):
                 gridOptions=gridOptions,
                 update_mode=GridUpdateMode.MODEL_CHANGED | GridUpdateMode.VALUE_CHANGED,
                 fit_columns_on_grid_load=True,
-                allow_unsafe_jscode=True,
                 theme="streamlit",
                 height=400,
                 custom_css={
@@ -86,22 +57,37 @@ def show_home_page(database_path):
             )
 
         with col2:
+            # Save Changes Button
             if st.button("Save Changes"):
                 updated_df = pd.DataFrame(grid_response["data"])
-                if not updated_df.equals(df):
-                    # Handle updates
+                if not updated_df.empty:
                     for _, row in updated_df.iterrows():
                         original_task = df[df["id"] == row["id"]]["task"].iloc[0]
                         if row["task"] != original_task:
                             update_task(row["id"], row["task"], database_path)
-
-                    # Handle deletions
-                    deleted_ids = set(df["id"]) - set(updated_df["id"])
-                    for task_id in deleted_ids:
-                        delete_task(task_id, database_path)
-
                     st.success("Changes saved!")
                     st.rerun()
+
+            # Handle selected rows for deletion
+            selected_rows = grid_response.get("selected_rows")
+
+            # Convert selected rows to list if we have selections
+            if selected_rows is not None:
+                if isinstance(selected_rows, pd.DataFrame):
+                    selected_rows = selected_rows.to_dict("records")
+
+                if len(selected_rows) > 0:
+                    st.write(f"Selected {len(selected_rows)} task(s)")
+                    if st.button("Delete Selected", type="primary"):
+                        try:
+                            for row in selected_rows:
+                                task_id = row.get("id")
+                                if task_id is not None:
+                                    delete_task(task_id, database_path)
+                            st.success(f"Deleted {len(selected_rows)} task(s)")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Error deleting tasks: {str(e)}")
 
     else:
         st.write("No tasks available.")
