@@ -22,7 +22,11 @@ def show_home_page(database_path):
 
         # Configure grid options
         gb = GridOptionsBuilder.from_dataframe(df)
-        gb.configure_column("id", hide=True)
+        gb.configure_column(
+            "id",
+            headerName="ID",
+            width=50,
+        )
         gb.configure_column(
             "task",
             editable=True,
@@ -34,8 +38,6 @@ def show_home_page(database_path):
         gb.configure_selection(
             selection_mode="multiple",
             use_checkbox=True,
-            pre_selected_rows=[],
-            header_checkbox=True,
         )
         gridOptions = gb.build()
 
@@ -49,11 +51,6 @@ def show_home_page(database_path):
                 update_mode=GridUpdateMode.MODEL_CHANGED | GridUpdateMode.VALUE_CHANGED,
                 fit_columns_on_grid_load=True,
                 theme="streamlit",
-                height=400,
-                custom_css={
-                    ".ag-cell-inline-editing": {"padding": "10px !important"},
-                    ".ag-header-cell-text": {"color": "#495057"},
-                },
             )
 
         with col2:
