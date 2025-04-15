@@ -10,7 +10,7 @@ from pages.home import show_home_page
 
 # Load environment variables
 load_dotenv()
-DATABASE_URL = os.getenv("DATABASE_URL")  # Changed from DATABASE_PATH to DATABASE_URL
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 
 def main():
