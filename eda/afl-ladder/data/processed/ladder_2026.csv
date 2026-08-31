@@ -1,0 +1,451 @@
+round_index,round_name,position,raw_team,team,played,wins,draws,losses,points_for,points_against,percentage,points
+0,Opening_Round,1,Sydney,Sydney Swans,1,1,0,0,132,69,191.3,4
+0,Opening_Round,2,Gold Coast,Gold Coast Suns,1,1,0,0,125,69,181.16,4
+0,Opening_Round,3,GW Sydney,GWS Giants,1,1,0,0,122,95,128.42,4
+0,Opening_Round,4,Collingwood,Collingwood,1,1,0,0,78,66,118.18,4
+0,Opening_Round,5,Wstn Bulldogs,Western Bulldogs,1,1,0,0,111,106,104.72,4
+0,Opening_Round,6,Brisbane,Brisbane Lions,1,0,0,1,106,111,95.5,0
+0,Opening_Round,7,St Kilda,St Kilda,1,0,0,1,66,78,84.62,0
+0,Opening_Round,8,Hawthorn,Hawthorn,1,0,0,1,95,122,77.87,0
+0,Opening_Round,9,Geelong,Geelong Cats,1,0,0,1,69,125,55.2,0
+0,Opening_Round,10,Carlton,Carlton,1,0,0,1,69,132,52.27,0
+0,Opening_Round,11,Adelaide,Adelaide,0,0,0,0,0,0,0.0,0
+0,Opening_Round,12,Essendon,Essendon,0,0,0,0,0,0,0.0,0
+0,Opening_Round,13,Fremantle,Fremantle,0,0,0,0,0,0,0.0,0
+0,Opening_Round,14,Melbourne,Melbourne,0,0,0,0,0,0,0.0,0
+0,Opening_Round,15,Nth Melbourne,North Melbourne,0,0,0,0,0,0,0.0,0
+0,Opening_Round,16,Port Adelaide,Port Adelaide,0,0,0,0,0,0,0.0,0
+0,Opening_Round,17,Richmond,Richmond,0,0,0,0,0,0,0.0,0
+0,Opening_Round,18,West Coast,West Coast Eagles,0,0,0,0,0,0,0.0,0
+1,Round_1,1,Sydney,Sydney Swans,2,2,0,0,236,129,182.95,8
+1,Round_1,2,Gold Coast,Gold Coast Suns,2,2,0,0,256,141,181.56,8
+1,Round_1,3,Wstn Bulldogs,Western Bulldogs,2,2,0,0,245,159,154.09,8
+1,Round_1,4,Nth Melbourne,North Melbourne,1,1,0,0,113,67,168.66,4
+1,Round_1,5,Adelaide,Adelaide,1,1,0,0,93,79,117.72,4
+1,Round_1,6,Hawthorn,Hawthorn,2,1,0,1,240,205,117.07,4
+1,Round_1,7,Melbourne,Melbourne,1,1,0,0,120,107,112.15,4
+1,Round_1,8,Collingwood,Collingwood,2,1,0,1,157,159,98.74,4
+1,Round_1,9,Geelong,Geelong Cats,2,1,0,1,179,225,79.56,4
+1,Round_1,10,GW Sydney,GWS Giants,2,1,0,1,175,229,76.42,4
+1,Round_1,11,Carlton,Carlton,2,1,0,1,144,203,70.94,4
+1,Round_1,12,Richmond,Richmond,1,0,0,1,71,75,94.67,0
+1,Round_1,13,Fremantle,Fremantle,1,0,0,1,100,110,90.91,0
+1,Round_1,14,St Kilda,St Kilda,2,0,0,2,173,198,87.37,0
+1,Round_1,15,Brisbane,Brisbane Lions,2,0,0,2,166,215,77.21,0
+1,Round_1,16,Port Adelaide,Port Adelaide,1,0,0,1,67,113,59.29,0
+1,Round_1,17,Essendon,Essendon,1,0,0,1,83,145,57.24,0
+1,Round_1,18,West Coast,West Coast Eagles,1,0,0,1,72,131,54.96,0
+2,Round_2,1,Gold Coast,Gold Coast Suns,3,3,0,0,384,201,191.04,12
+2,Round_2,2,Wstn Bulldogs,Western Bulldogs,3,3,0,0,339,247,137.25,12
+2,Round_2,3,Sydney,Sydney Swans,3,2,0,1,318,228,139.47,8
+2,Round_2,4,Hawthorn,Hawthorn,3,2,0,1,339,287,118.12,8
+2,Round_2,5,Fremantle,Fremantle,2,1,0,1,218,180,121.11,4
+2,Round_2,6,Nth Melbourne,North Melbourne,2,1,0,1,207,178,116.29,4
+2,Round_2,7,Port Adelaide,Port Adelaide,2,1,0,1,200,183,109.29,4
+2,Round_2,8,Adelaide,Adelaide,2,1,0,1,181,173,104.62,4
+2,Round_2,9,Collingwood,Collingwood,2,1,0,1,157,159,98.74,4
+2,Round_2,10,St Kilda,St Kilda,3,1,0,2,251,272,92.28,4
+2,Round_2,11,Melbourne,Melbourne,2,1,0,1,190,225,84.44,4
+2,Round_2,12,West Coast,West Coast Eagles,2,1,0,1,183,225,81.33,4
+2,Round_2,13,GW Sydney,GWS Giants,3,1,0,2,249,307,81.11,4
+2,Round_2,14,Geelong,Geelong Cats,2,1,0,1,179,225,79.56,4
+2,Round_2,15,Carlton,Carlton,2,1,0,1,144,203,70.94,4
+2,Round_2,16,Brisbane,Brisbane Lions,2,0,0,2,166,215,77.21,0
+2,Round_2,17,Richmond,Richmond,2,0,0,2,131,203,64.53,0
+2,Round_2,18,Essendon,Essendon,2,0,0,2,153,278,55.04,0
+3,Round_3,1,Gold Coast,Gold Coast Suns,3,3,0,0,384,201,191.04,12
+3,Round_3,2,Wstn Bulldogs,Western Bulldogs,3,3,0,0,339,247,137.25,12
+3,Round_3,3,Fremantle,Fremantle,3,2,0,1,321,223,143.95,8
+3,Round_3,4,Sydney,Sydney Swans,3,2,0,1,318,228,139.47,8
+3,Round_3,5,Hawthorn,Hawthorn,3,2,0,1,339,287,118.12,8
+3,Round_3,6,Nth Melbourne,North Melbourne,3,2,0,1,288,247,116.6,8
+3,Round_3,7,Collingwood,Collingwood,3,2,0,1,244,213,114.55,8
+3,Round_3,8,Melbourne,Melbourne,3,2,0,1,290,302,96.03,8
+3,Round_3,9,West Coast,West Coast Eagles,3,2,0,1,275,315,87.3,8
+3,Round_3,10,Geelong,Geelong Cats,3,2,0,1,247,285,86.67,8
+3,Round_3,11,Port Adelaide,Port Adelaide,3,1,0,2,290,275,105.45,4
+3,Round_3,12,Adelaide,Adelaide,3,1,0,2,241,241,100.0,4
+3,Round_3,13,Brisbane,Brisbane Lions,3,1,0,2,279,295,94.58,4
+3,Round_3,14,St Kilda,St Kilda,4,1,0,3,331,385,85.97,4
+3,Round_3,15,GW Sydney,GWS Giants,4,1,0,3,303,394,76.9,4
+3,Round_3,16,Carlton,Carlton,3,1,0,2,221,303,72.94,4
+3,Round_3,17,Essendon,Essendon,3,0,0,3,222,359,61.84,0
+3,Round_3,18,Richmond,Richmond,3,0,0,3,174,306,56.86,0
+4,Round_4,1,Wstn Bulldogs,Western Bulldogs,4,4,0,0,438,312,140.38,16
+4,Round_4,2,Sydney,Sydney Swans,4,3,0,1,481,263,182.89,12
+4,Round_4,3,Gold Coast,Gold Coast Suns,4,3,0,1,473,310,152.58,12
+4,Round_4,4,Fremantle,Fremantle,4,3,0,1,399,299,133.44,12
+4,Round_4,5,Nth Melbourne,North Melbourne,4,3,0,1,384,333,115.32,12
+4,Round_4,6,Hawthorn,Hawthorn,4,3,0,1,431,378,114.02,12
+4,Round_4,7,Melbourne,Melbourne,4,3,0,1,399,391,102.05,12
+4,Round_4,8,Port Adelaide,Port Adelaide,4,2,0,2,380,323,117.65,8
+4,Round_4,9,Brisbane,Brisbane Lions,4,2,0,2,398,360,110.56,8
+4,Round_4,10,Collingwood,Collingwood,4,2,0,2,309,332,93.07,8
+4,Round_4,11,Geelong,Geelong Cats,4,2,0,2,338,377,89.66,8
+4,Round_4,12,West Coast,West Coast Eagles,4,2,0,2,310,478,64.85,8
+4,Round_4,13,Adelaide,Adelaide,4,1,0,3,317,319,99.37,4
+4,Round_4,14,St Kilda,St Kilda,4,1,0,3,331,385,85.97,4
+4,Round_4,15,Carlton,Carlton,4,1,0,3,307,399,76.94,4
+4,Round_4,16,GW Sydney,GWS Giants,4,1,0,3,303,394,76.9,4
+4,Round_4,17,Essendon,Essendon,4,0,0,4,287,458,62.66,0
+4,Round_4,18,Richmond,Richmond,4,0,0,4,222,396,56.06,0
+5,Round_5,1,Sydney,Sydney Swans,5,4,0,1,581,331,175.53,16
+5,Round_5,2,Fremantle,Fremantle,5,4,0,1,444,338,131.36,16
+5,Round_5,3,Hawthorn,Hawthorn,5,4,0,1,535,442,121.04,16
+5,Round_5,4,Wstn Bulldogs,Western Bulldogs,5,4,0,1,502,416,120.67,16
+5,Round_5,5,Gold Coast,Gold Coast Suns,5,3,0,2,541,410,131.95,12
+5,Round_5,6,Brisbane,Brisbane Lions,5,3,0,2,490,426,115.02,12
+5,Round_5,7,Nth Melbourne,North Melbourne,5,3,0,2,450,425,105.88,12
+5,Round_5,8,Geelong,Geelong Cats,5,3,0,2,460,453,101.55,12
+5,Round_5,9,Melbourne,Melbourne,5,3,0,2,467,504,92.66,12
+5,Round_5,10,Port Adelaide,Port Adelaide,5,2,0,3,447,404,110.64,8
+5,Round_5,11,Adelaide,Adelaide,5,2,0,3,431,405,106.42,8
+5,Round_5,12,GW Sydney,GWS Giants,5,2,0,3,434,469,92.54,8
+5,Round_5,13,Collingwood,Collingwood,5,2,0,3,348,377,92.31,8
+5,Round_5,14,St Kilda,St Kilda,5,2,0,3,412,452,91.15,8
+5,Round_5,15,West Coast,West Coast Eagles,5,2,0,3,386,600,64.33,8
+5,Round_5,16,Carlton,Carlton,5,1,0,4,393,513,76.61,4
+5,Round_5,17,Essendon,Essendon,5,1,0,4,400,526,76.05,4
+5,Round_5,18,Richmond,Richmond,5,0,0,5,297,527,56.36,0
+6,Round_6,1,Sydney,Sydney Swans,6,5,0,1,688,397,173.3,20
+6,Round_6,2,Fremantle,Fremantle,6,5,0,1,541,379,142.74,20
+6,Round_6,3,Hawthorn,Hawthorn,6,5,0,1,624,528,118.18,20
+6,Round_6,4,Gold Coast,Gold Coast Suns,6,4,0,2,660,520,126.92,16
+6,Round_6,5,Nth Melbourne,North Melbourne,6,4,0,2,580,480,120.83,16
+6,Round_6,6,Geelong,Geelong Cats,6,4,0,2,591,509,116.11,16
+6,Round_6,7,Wstn Bulldogs,Western Bulldogs,6,4,0,2,558,547,102.01,16
+6,Round_6,8,Melbourne,Melbourne,6,4,0,2,571,606,94.22,16
+6,Round_6,9,Brisbane,Brisbane Lions,6,3,0,3,592,530,111.7,12
+6,Round_6,10,Adelaide,Adelaide,6,3,0,3,534,507,105.33,12
+6,Round_6,11,Collingwood,Collingwood,6,3,0,3,436,460,94.78,12
+6,Round_6,12,Port Adelaide,Port Adelaide,6,2,0,4,533,493,108.11,8
+6,Round_6,13,St Kilda,St Kilda,6,2,0,4,514,555,92.61,8
+6,Round_6,14,GW Sydney,GWS Giants,6,2,0,4,500,576,86.81,8
+6,Round_6,15,West Coast,West Coast Eagles,6,2,0,4,427,697,61.26,8
+6,Round_6,16,Carlton,Carlton,6,1,0,5,476,601,79.2,4
+6,Round_6,17,Essendon,Essendon,6,1,0,5,510,645,79.07,4
+6,Round_6,18,Richmond,Richmond,6,0,0,6,352,657,53.58,0
+7,Round_7,1,Sydney,Sydney Swans,7,6,0,1,814,457,178.12,24
+7,Round_7,2,Fremantle,Fremantle,7,6,0,1,644,468,137.61,24
+7,Round_7,3,Hawthorn,Hawthorn,7,6,0,1,736,591,124.53,24
+7,Round_7,4,Melbourne,Melbourne,7,5,0,2,697,678,102.8,20
+7,Round_7,5,Brisbane,Brisbane Lions,7,4,0,3,719,605,118.84,16
+7,Round_7,6,Nth Melbourne,North Melbourne,7,4,0,3,678,585,115.9,16
+7,Round_7,7,Gold Coast,Gold Coast Suns,7,4,0,3,723,632,114.4,16
+7,Round_7,8,Collingwood,Collingwood,7,4,0,3,573,520,110.19,16
+7,Round_7,9,Geelong,Geelong Cats,7,4,0,3,656,604,108.61,16
+7,Round_7,10,Wstn Bulldogs,Western Bulldogs,7,4,0,3,618,673,91.83,16
+7,Round_7,11,Port Adelaide,Port Adelaide,7,3,0,4,628,558,112.54,12
+7,Round_7,12,St Kilda,St Kilda,7,3,0,4,657,597,110.05,12
+7,Round_7,13,Adelaide,Adelaide,7,3,0,4,609,634,96.06,12
+7,Round_7,14,GW Sydney,GWS Giants,7,3,0,4,605,674,89.76,12
+7,Round_7,15,West Coast,West Coast Eagles,7,2,0,5,469,840,55.83,8
+7,Round_7,16,Carlton,Carlton,7,1,0,6,565,704,80.26,4
+7,Round_7,17,Essendon,Essendon,7,1,0,6,570,782,72.89,4
+7,Round_7,18,Richmond,Richmond,7,0,0,7,424,783,54.15,0
+8,Round_8,1,Sydney,Sydney Swans,8,7,0,1,945,571,165.5,28
+8,Round_8,2,Fremantle,Fremantle,8,7,0,1,758,570,132.98,28
+8,Round_8,3,Hawthorn,Hawthorn,8,6,1,1,829,684,121.2,26
+8,Round_8,4,Brisbane,Brisbane Lions,8,5,0,3,862,684,126.02,20
+8,Round_8,5,Gold Coast,Gold Coast Suns,8,5,0,3,806,695,115.97,20
+8,Round_8,6,Geelong,Geelong Cats,8,5,0,3,791,690,114.64,20
+8,Round_8,7,Melbourne,Melbourne,8,5,0,3,811,809,100.25,20
+8,Round_8,8,Collingwood,Collingwood,8,4,1,3,666,613,108.65,18
+8,Round_8,9,St Kilda,St Kilda,8,4,0,4,765,666,114.86,16
+8,Round_8,10,Nth Melbourne,North Melbourne,8,4,0,4,764,720,106.11,16
+8,Round_8,11,Adelaide,Adelaide,8,4,0,4,685,709,96.61,16
+8,Round_8,12,Wstn Bulldogs,Western Bulldogs,8,4,0,4,720,787,91.49,16
+8,Round_8,13,Port Adelaide,Port Adelaide,8,3,0,5,703,634,110.88,12
+8,Round_8,14,GW Sydney,GWS Giants,8,3,0,5,668,757,88.24,12
+8,Round_8,15,West Coast,West Coast Eagles,8,2,0,6,557,939,59.32,8
+8,Round_8,16,Carlton,Carlton,8,1,0,7,634,812,78.08,4
+8,Round_8,17,Essendon,Essendon,8,1,0,7,649,925,70.16,4
+8,Round_8,18,Richmond,Richmond,8,1,0,7,523,871,60.05,4
+9,Round_9,1,Sydney,Sydney Swans,9,8,0,1,1050,668,157.19,32
+9,Round_9,2,Fremantle,Fremantle,9,8,0,1,846,643,131.57,32
+9,Round_9,3,Hawthorn,Hawthorn,9,6,1,2,902,772,116.84,26
+9,Round_9,4,Brisbane,Brisbane Lions,9,6,0,3,962,773,124.45,24
+9,Round_9,5,Geelong,Geelong Cats,9,6,0,3,913,758,120.45,24
+9,Round_9,6,Gold Coast,Gold Coast Suns,9,6,0,3,895,755,118.54,24
+9,Round_9,7,Melbourne,Melbourne,9,6,0,3,910,876,103.88,24
+9,Round_9,8,Adelaide,Adelaide,9,5,0,4,783,770,101.69,20
+9,Round_9,9,Wstn Bulldogs,Western Bulldogs,9,5,0,4,794,859,92.43,20
+9,Round_9,10,Collingwood,Collingwood,9,4,1,4,734,735,99.86,18
+9,Round_9,11,St Kilda,St Kilda,9,4,0,5,825,755,109.27,16
+9,Round_9,12,Nth Melbourne,North Melbourne,9,4,0,5,861,825,104.36,16
+9,Round_9,13,GW Sydney,GWS Giants,9,4,0,5,771,846,91.13,16
+9,Round_9,14,Port Adelaide,Port Adelaide,9,3,0,6,775,708,109.46,12
+9,Round_9,15,West Coast,West Coast Eagles,9,2,0,7,624,1038,60.12,8
+9,Round_9,16,Carlton,Carlton,9,1,0,8,723,912,79.28,4
+9,Round_9,17,Essendon,Essendon,9,1,0,8,738,1028,71.79,4
+9,Round_9,18,Richmond,Richmond,9,1,0,8,584,969,60.27,4
+10,Round_10,1,Sydney,Sydney Swans,10,9,0,1,1131,743,152.22,36
+10,Round_10,2,Fremantle,Fremantle,10,9,0,1,950,704,134.94,36
+10,Round_10,3,Geelong,Geelong Cats,10,7,0,3,1030,834,123.5,28
+10,Round_10,4,Gold Coast,Gold Coast Suns,10,7,0,3,993,828,119.93,28
+10,Round_10,5,Melbourne,Melbourne,10,7,0,3,1030,957,107.63,28
+10,Round_10,6,Hawthorn,Hawthorn,10,6,1,3,983,892,110.2,26
+10,Round_10,7,Brisbane,Brisbane Lions,10,6,0,4,1038,890,116.63,24
+10,Round_10,8,Adelaide,Adelaide,10,6,0,4,916,835,109.7,24
+10,Round_10,9,St Kilda,St Kilda,10,5,0,5,934,828,112.8,20
+10,Round_10,10,Wstn Bulldogs,Western Bulldogs,10,5,0,5,856,933,91.75,20
+10,Round_10,11,Collingwood,Collingwood,10,4,1,5,809,816,99.14,18
+10,Round_10,12,Nth Melbourne,North Melbourne,10,4,0,6,926,958,96.66,16
+10,Round_10,13,GW Sydney,GWS Giants,10,4,0,6,842,934,90.15,16
+10,Round_10,14,Port Adelaide,Port Adelaide,10,3,0,7,848,806,105.21,12
+10,Round_10,15,West Coast,West Coast Eagles,10,3,0,7,712,1109,64.2,12
+10,Round_10,16,Carlton,Carlton,10,2,0,8,797,974,81.83,8
+10,Round_10,17,Essendon,Essendon,10,1,0,9,799,1132,70.58,4
+10,Round_10,18,Richmond,Richmond,10,1,0,9,657,1078,60.95,4
+11,Round_11,1,Fremantle,Fremantle,11,10,0,1,1054,778,135.48,40
+11,Round_11,2,Sydney,Sydney Swans,11,9,0,2,1211,850,142.47,36
+11,Round_11,3,Geelong,Geelong Cats,11,8,0,3,1137,914,124.4,32
+11,Round_11,4,Hawthorn,Hawthorn,11,7,1,3,1058,958,110.44,30
+11,Round_11,5,Gold Coast,Gold Coast Suns,11,7,0,4,1098,939,116.93,28
+11,Round_11,6,Melbourne,Melbourne,11,7,0,4,1120,1050,106.67,28
+11,Round_11,7,Adelaide,Adelaide,11,6,0,5,982,910,107.91,24
+11,Round_11,8,Brisbane,Brisbane Lions,11,6,0,5,1126,1056,106.63,24
+11,Round_11,9,Wstn Bulldogs,Western Bulldogs,11,6,0,5,949,1023,92.77,24
+11,Round_11,10,Collingwood,Collingwood,11,5,1,5,901,898,100.33,22
+11,Round_11,11,St Kilda,St Kilda,11,5,0,6,1008,932,108.15,20
+11,Round_11,12,GW Sydney,GWS Giants,11,5,0,6,1008,1022,98.63,20
+11,Round_11,13,Nth Melbourne,North Melbourne,11,5,0,6,1037,1063,97.55,20
+11,Round_11,14,Port Adelaide,Port Adelaide,11,3,0,8,906,898,100.89,12
+11,Round_11,15,Carlton,Carlton,11,3,0,8,889,1032,86.14,12
+11,Round_11,16,West Coast,West Coast Eagles,11,3,0,8,794,1201,66.11,12
+11,Round_11,17,Richmond,Richmond,11,2,0,9,731,1134,64.46,8
+11,Round_11,18,Essendon,Essendon,11,1,0,10,855,1206,70.9,4
+12,Round_12,1,Fremantle,Fremantle,12,11,0,1,1157,856,135.16,44
+12,Round_12,2,Sydney,Sydney Swans,12,10,0,2,1381,906,152.43,40
+12,Round_12,3,Hawthorn,Hawthorn,12,8,1,3,1177,1025,114.83,34
+12,Round_12,4,Geelong,Geelong Cats,12,8,0,4,1221,1002,121.86,32
+12,Round_12,5,Gold Coast,Gold Coast Suns,11,7,0,4,1098,939,116.93,28
+12,Round_12,6,Melbourne,Melbourne,12,7,0,5,1190,1169,101.8,28
+12,Round_12,7,Wstn Bulldogs,Western Bulldogs,12,7,0,5,1046,1116,93.73,28
+12,Round_12,8,Adelaide,Adelaide,11,6,0,5,982,910,107.91,24
+12,Round_12,9,Brisbane,Brisbane Lions,12,6,0,6,1204,1159,103.88,24
+12,Round_12,10,GW Sydney,GWS Giants,12,6,0,6,1127,1092,103.21,24
+12,Round_12,11,Collingwood,Collingwood,12,5,1,6,994,995,99.9,22
+12,Round_12,12,St Kilda,St Kilda,12,5,0,7,1075,1051,102.28,20
+12,Round_12,13,Nth Melbourne,North Melbourne,11,5,0,6,1037,1063,97.55,20
+12,Round_12,14,Carlton,Carlton,12,4,0,8,977,1116,87.54,16
+12,Round_12,15,West Coast,West Coast Eagles,12,4,0,8,879,1256,69.98,16
+12,Round_12,16,Port Adelaide,Port Adelaide,11,3,0,8,906,898,100.89,12
+12,Round_12,17,Richmond,Richmond,12,2,0,10,787,1304,60.35,8
+12,Round_12,18,Essendon,Essendon,12,1,0,11,910,1291,70.49,4
+13,Round_13,1,Fremantle,Fremantle,13,12,0,1,1312,887,147.91,48
+13,Round_13,2,Sydney,Sydney Swans,13,11,0,2,1485,1008,147.32,44
+13,Round_13,3,Hawthorn,Hawthorn,13,8,1,4,1248,1102,113.25,34
+13,Round_13,4,Geelong,Geelong Cats,13,8,0,5,1295,1077,120.24,32
+13,Round_13,5,Melbourne,Melbourne,13,8,0,5,1273,1244,102.33,32
+13,Round_13,6,Wstn Bulldogs,Western Bulldogs,13,8,0,5,1123,1187,94.61,32
+13,Round_13,7,Gold Coast,Gold Coast Suns,12,7,0,5,1173,1045,112.25,28
+13,Round_13,8,Adelaide,Adelaide,12,7,0,5,1057,984,107.42,28
+13,Round_13,9,Brisbane,Brisbane Lions,13,7,0,6,1310,1234,106.16,28
+13,Round_13,10,GW Sydney,GWS Giants,12,6,0,6,1127,1092,103.21,24
+13,Round_13,11,Collingwood,Collingwood,13,5,1,7,1069,1078,99.17,22
+13,Round_13,12,St Kilda,St Kilda,13,5,0,8,1177,1155,101.9,20
+13,Round_13,13,Carlton,Carlton,13,5,0,8,1049,1183,88.67,20
+13,Round_13,14,Nth Melbourne,North Melbourne,12,5,0,7,1068,1218,87.68,20
+13,Round_13,15,Port Adelaide,Port Adelaide,12,4,0,8,983,969,101.44,16
+13,Round_13,16,West Coast,West Coast Eagles,13,4,0,9,950,1333,71.27,16
+13,Round_13,17,Richmond,Richmond,12,2,0,10,787,1304,60.35,8
+13,Round_13,18,Essendon,Essendon,13,1,0,12,977,1363,71.68,4
+14,Round_14,1,Fremantle,Fremantle,13,12,0,1,1312,887,147.91,48
+14,Round_14,2,Sydney,Sydney Swans,14,12,0,2,1578,1098,143.72,48
+14,Round_14,3,Geelong,Geelong Cats,14,9,0,5,1400,1137,123.13,36
+14,Round_14,4,Melbourne,Melbourne,14,9,0,5,1368,1294,105.72,36
+14,Round_14,5,Hawthorn,Hawthorn,13,8,1,4,1248,1102,113.25,34
+14,Round_14,6,Adelaide,Adelaide,13,8,0,5,1178,1048,112.4,32
+14,Round_14,7,Brisbane,Brisbane Lions,14,8,0,6,1425,1314,108.45,32
+14,Round_14,8,Wstn Bulldogs,Western Bulldogs,14,8,0,6,1187,1308,90.75,32
+14,Round_14,9,Gold Coast,Gold Coast Suns,13,7,0,6,1233,1150,107.22,28
+14,Round_14,10,St Kilda,St Kilda,14,6,0,8,1273,1243,102.41,24
+14,Round_14,11,GW Sydney,GWS Giants,13,6,0,7,1215,1188,102.27,24
+14,Round_14,12,Nth Melbourne,North Melbourne,13,6,0,7,1142,1291,88.46,24
+14,Round_14,13,Collingwood,Collingwood,13,5,1,7,1069,1078,99.17,22
+14,Round_14,14,Carlton,Carlton,13,5,0,8,1049,1183,88.67,20
+14,Round_14,15,Port Adelaide,Port Adelaide,13,4,0,9,1073,1062,101.04,16
+14,Round_14,16,West Coast,West Coast Eagles,14,4,0,10,1023,1407,72.71,16
+14,Round_14,17,Richmond,Richmond,13,2,0,11,867,1419,61.1,8
+14,Round_14,18,Essendon,Essendon,14,1,0,13,1027,1458,70.44,4
+15,Round_15,1,Fremantle,Fremantle,14,13,0,1,1411,977,144.42,52
+15,Round_15,2,Sydney,Sydney Swans,14,12,0,2,1578,1098,143.72,48
+15,Round_15,3,Hawthorn,Hawthorn,14,9,1,4,1361,1199,113.51,38
+15,Round_15,4,Geelong,Geelong Cats,15,9,0,6,1490,1236,120.55,36
+15,Round_15,5,Adelaide,Adelaide,14,9,0,5,1257,1110,113.24,36
+15,Round_15,6,Melbourne,Melbourne,15,9,0,6,1430,1373,104.15,36
+15,Round_15,7,Wstn Bulldogs,Western Bulldogs,15,9,0,6,1270,1369,92.77,36
+15,Round_15,8,Brisbane,Brisbane Lions,14,8,0,6,1425,1314,108.45,32
+15,Round_15,9,Gold Coast,Gold Coast Suns,14,7,0,7,1330,1263,105.3,28
+15,Round_15,10,Nth Melbourne,North Melbourne,14,7,0,7,1215,1339,90.74,28
+15,Round_15,11,Collingwood,Collingwood,14,6,1,7,1147,1130,101.5,26
+15,Round_15,12,St Kilda,St Kilda,15,6,0,9,1334,1326,100.6,24
+15,Round_15,13,GW Sydney,GWS Giants,14,6,0,8,1280,1276,100.31,24
+15,Round_15,14,Carlton,Carlton,14,6,0,8,1137,1248,91.11,24
+15,Round_15,15,Port Adelaide,Port Adelaide,14,4,0,10,1125,1140,98.68,16
+15,Round_15,16,West Coast,West Coast Eagles,14,4,0,10,1023,1407,72.71,16
+15,Round_15,17,Richmond,Richmond,14,2,0,12,915,1492,61.33,8
+15,Round_15,18,Essendon,Essendon,14,1,0,13,1027,1458,70.44,4
+16,Round_16,1,Fremantle,Fremantle,15,14,0,1,1491,1006,148.21,56
+16,Round_16,2,Sydney,Sydney Swans,15,12,0,3,1661,1224,135.7,48
+16,Round_16,3,Hawthorn,Hawthorn,15,10,1,4,1457,1281,113.74,42
+16,Round_16,4,Geelong,Geelong Cats,15,9,0,6,1490,1236,120.55,36
+16,Round_16,5,Brisbane,Brisbane Lions,15,9,0,6,1551,1397,111.02,36
+16,Round_16,6,Adelaide,Adelaide,15,9,0,6,1328,1207,110.02,36
+16,Round_16,7,Melbourne,Melbourne,15,9,0,6,1430,1373,104.15,36
+16,Round_16,8,Wstn Bulldogs,Western Bulldogs,15,9,0,6,1270,1369,92.77,36
+16,Round_16,9,Nth Melbourne,North Melbourne,15,8,0,7,1294,1404,92.17,32
+16,Round_16,10,Collingwood,Collingwood,15,7,1,7,1253,1202,104.24,30
+16,Round_16,11,Gold Coast,Gold Coast Suns,15,7,0,8,1359,1343,101.19,28
+16,Round_16,12,Carlton,Carlton,15,7,0,8,1254,1312,95.58,28
+16,Round_16,13,St Kilda,St Kilda,15,6,0,9,1334,1326,100.6,24
+16,Round_16,14,GW Sydney,GWS Giants,15,6,0,9,1362,1372,99.27,24
+16,Round_16,15,Port Adelaide,Port Adelaide,15,5,0,10,1222,1211,100.91,20
+16,Round_16,16,West Coast,West Coast Eagles,15,4,0,11,1087,1524,71.33,16
+16,Round_16,17,Richmond,Richmond,15,2,0,13,987,1598,61.76,8
+16,Round_16,18,Essendon,Essendon,15,1,0,14,1092,1537,71.05,4
+17,Round_17,1,Fremantle,Fremantle,16,14,0,2,1579,1115,141.61,56
+17,Round_17,2,Sydney,Sydney Swans,16,13,0,3,1751,1279,136.9,52
+17,Round_17,3,Hawthorn,Hawthorn,16,10,1,5,1547,1406,110.03,42
+17,Round_17,4,Brisbane,Brisbane Lions,16,10,0,6,1674,1498,111.75,40
+17,Round_17,5,Adelaide,Adelaide,16,10,0,6,1427,1281,111.4,40
+17,Round_17,6,Melbourne,Melbourne,16,10,0,6,1555,1463,106.29,40
+17,Round_17,7,Geelong,Geelong Cats,16,9,0,7,1591,1359,117.07,36
+17,Round_17,8,Wstn Bulldogs,Western Bulldogs,16,9,0,7,1325,1459,90.82,36
+17,Round_17,9,Collingwood,Collingwood,16,8,1,7,1357,1300,104.38,34
+17,Round_17,10,Carlton,Carlton,16,8,0,8,1328,1384,95.95,32
+17,Round_17,11,Nth Melbourne,North Melbourne,16,8,0,8,1346,1477,91.13,32
+17,Round_17,12,St Kilda,St Kilda,16,7,0,9,1451,1376,105.45,28
+17,Round_17,13,GW Sydney,GWS Giants,16,7,0,9,1471,1460,100.75,28
+17,Round_17,14,Gold Coast,Gold Coast Suns,16,7,0,9,1457,1447,100.69,28
+17,Round_17,15,Port Adelaide,Port Adelaide,16,6,0,10,1295,1263,102.53,24
+17,Round_17,16,West Coast,West Coast Eagles,16,4,0,12,1161,1623,71.53,16
+17,Round_17,17,Richmond,Richmond,16,2,0,14,1059,1672,63.34,8
+17,Round_17,18,Essendon,Essendon,16,1,0,15,1142,1654,69.04,4
+18,Round_18,1,Fremantle,Fremantle,17,15,0,2,1690,1188,142.26,60
+18,Round_18,2,Sydney,Sydney Swans,17,13,0,4,1824,1390,131.22,52
+18,Round_18,3,Hawthorn,Hawthorn,17,11,1,5,1650,1445,114.19,46
+18,Round_18,4,Brisbane,Brisbane Lions,17,11,0,6,1823,1557,117.08,44
+18,Round_18,5,Adelaide,Adelaide,17,11,0,6,1555,1330,116.92,44
+18,Round_18,6,Melbourne,Melbourne,17,11,0,6,1666,1528,109.03,44
+18,Round_18,7,Wstn Bulldogs,Western Bulldogs,17,10,0,7,1411,1529,92.28,40
+18,Round_18,8,Collingwood,Collingwood,17,9,1,7,1446,1385,104.4,38
+18,Round_18,9,Geelong,Geelong Cats,17,9,0,8,1664,1445,115.16,36
+18,Round_18,10,St Kilda,St Kilda,17,8,0,9,1538,1449,106.14,32
+18,Round_18,11,GW Sydney,GWS Giants,17,8,0,9,1557,1533,101.57,32
+18,Round_18,12,Carlton,Carlton,17,8,0,9,1367,1487,91.93,32
+18,Round_18,13,Nth Melbourne,North Melbourne,17,8,0,9,1431,1566,91.38,32
+18,Round_18,14,Gold Coast,Gold Coast Suns,17,7,0,10,1506,1575,95.62,28
+18,Round_18,15,Port Adelaide,Port Adelaide,17,6,0,11,1368,1350,101.33,24
+18,Round_18,16,West Coast,West Coast Eagles,17,4,0,13,1231,1709,72.03,16
+18,Round_18,17,Richmond,Richmond,17,2,0,15,1124,1783,63.04,8
+18,Round_18,18,Essendon,Essendon,17,1,0,16,1201,1803,66.61,4
+19,Round_19,1,Fremantle,Fremantle,18,16,0,2,1793,1263,141.96,64
+19,Round_19,2,Sydney,Sydney Swans,18,13,0,5,1895,1477,128.3,52
+19,Round_19,3,Hawthorn,Hawthorn,18,12,1,5,1772,1497,118.37,50
+19,Round_19,4,Brisbane,Brisbane Lions,18,12,0,6,1916,1626,117.84,48
+19,Round_19,5,Adelaide,Adelaide,18,12,0,6,1642,1401,117.2,48
+19,Round_19,6,Melbourne,Melbourne,18,12,0,6,1758,1604,109.6,48
+19,Round_19,7,Wstn Bulldogs,Western Bulldogs,18,11,0,7,1488,1597,93.17,44
+19,Round_19,8,Collingwood,Collingwood,18,10,1,7,1536,1454,105.64,42
+19,Round_19,9,Geelong,Geelong Cats,18,10,0,8,1766,1520,116.18,40
+19,Round_19,10,St Kilda,St Kilda,18,8,0,10,1613,1551,104.0,32
+19,Round_19,11,GW Sydney,GWS Giants,18,8,0,10,1621,1600,101.31,32
+19,Round_19,12,Carlton,Carlton,18,8,0,10,1436,1577,91.06,32
+19,Round_19,13,Nth Melbourne,North Melbourne,18,8,0,10,1507,1658,90.89,32
+19,Round_19,14,Gold Coast,Gold Coast Suns,18,7,0,11,1574,1652,95.28,28
+19,Round_19,15,Port Adelaide,Port Adelaide,18,6,0,12,1443,1453,99.31,24
+19,Round_19,16,West Coast,West Coast Eagles,18,4,0,14,1300,1802,72.14,16
+19,Round_19,17,Essendon,Essendon,18,2,0,16,1268,1867,67.92,8
+19,Round_19,18,Richmond,Richmond,18,2,0,16,1176,1905,61.73,8
+20,Round_20,1,Fremantle,Fremantle,19,17,0,2,1905,1305,145.98,68
+20,Round_20,2,Sydney,Sydney Swans,19,14,0,5,2034,1565,129.97,56
+20,Round_20,3,Hawthorn,Hawthorn,19,13,1,5,1904,1536,123.96,54
+20,Round_20,4,Brisbane,Brisbane Lions,19,13,0,6,2042,1693,120.61,52
+20,Round_20,5,Adelaide,Adelaide,19,12,0,7,1716,1509,113.72,48
+20,Round_20,6,Melbourne,Melbourne,19,12,0,7,1855,1721,107.79,48
+20,Round_20,7,Wstn Bulldogs,Western Bulldogs,19,12,0,7,1593,1645,96.84,48
+20,Round_20,8,Collingwood,Collingwood,19,11,1,7,1644,1528,107.59,46
+20,Round_20,9,Geelong,Geelong Cats,19,11,0,8,1883,1617,116.45,44
+20,Round_20,10,St Kilda,St Kilda,19,9,0,10,1706,1613,105.77,36
+20,Round_20,11,Carlton,Carlton,19,9,0,10,1546,1674,92.35,36
+20,Round_20,12,GW Sydney,GWS Giants,19,8,0,11,1709,1739,98.27,32
+20,Round_20,13,Nth Melbourne,North Melbourne,19,8,0,11,1569,1751,89.61,32
+20,Round_20,14,Gold Coast,Gold Coast Suns,19,7,0,12,1671,1762,94.84,28
+20,Round_20,15,Port Adelaide,Port Adelaide,19,6,0,13,1510,1579,95.63,24
+20,Round_20,16,West Coast,West Coast Eagles,19,4,0,15,1342,1914,70.11,16
+20,Round_20,17,Essendon,Essendon,19,2,0,17,1307,1999,65.38,8
+20,Round_20,18,Richmond,Richmond,19,2,0,17,1224,2010,60.9,8
+21,Round_21,1,Fremantle,Fremantle,20,18,0,2,1983,1346,147.33,72
+21,Round_21,2,Sydney,Sydney Swans,20,15,0,5,2141,1653,129.52,60
+21,Round_21,3,Hawthorn,Hawthorn,20,14,1,5,2003,1619,123.72,58
+21,Round_21,4,Adelaide,Adelaide,20,13,0,7,1861,1582,117.64,52
+21,Round_21,5,Brisbane,Brisbane Lions,20,13,0,7,2120,1847,114.78,52
+21,Round_21,6,Melbourne,Melbourne,20,13,0,7,1969,1826,107.83,52
+21,Round_21,7,Geelong,Geelong Cats,20,12,0,8,1980,1689,117.23,48
+21,Round_21,8,Wstn Bulldogs,Western Bulldogs,20,12,0,8,1634,1723,94.83,48
+21,Round_21,9,Collingwood,Collingwood,20,11,1,8,1716,1625,105.6,46
+21,Round_21,10,Carlton,Carlton,20,10,0,10,1700,1752,97.03,40
+21,Round_21,11,St Kilda,St Kilda,20,9,0,11,1794,1720,104.3,36
+21,Round_21,12,GW Sydney,GWS Giants,20,9,0,11,1784,1802,99.0,36
+21,Round_21,13,Nth Melbourne,North Melbourne,20,8,0,12,1652,1850,89.3,32
+21,Round_21,14,Gold Coast,Gold Coast Suns,20,7,0,13,1776,1876,94.67,28
+21,Round_21,15,Port Adelaide,Port Adelaide,20,6,0,14,1573,1654,95.1,24
+21,Round_21,16,West Coast,West Coast Eagles,20,4,0,16,1415,1998,70.82,16
+21,Round_21,17,Richmond,Richmond,20,3,0,17,1308,2083,62.79,12
+21,Round_21,18,Essendon,Essendon,20,2,0,18,1380,2144,64.37,8
+22,Round_22,1,Fremantle,Fremantle,21,18,0,3,2092,1459,143.39,72
+22,Round_22,2,Sydney,Sydney Swans,21,16,0,5,2308,1723,133.95,64
+22,Round_22,3,Hawthorn,Hawthorn,21,14,1,6,2061,1744,118.18,58
+22,Round_22,4,Brisbane,Brisbane Lions,21,14,0,7,2245,1905,117.85,56
+22,Round_22,5,Adelaide,Adelaide,21,14,0,7,1924,1636,117.6,56
+22,Round_22,6,Melbourne,Melbourne,21,14,0,7,2082,1935,107.6,56
+22,Round_22,7,Geelong,Geelong Cats,21,13,0,8,2097,1739,120.59,52
+22,Round_22,8,Collingwood,Collingwood,21,12,1,8,1833,1723,106.38,50
+22,Round_22,9,Wstn Bulldogs,Western Bulldogs,21,12,0,9,1711,1823,93.86,48
+22,Round_22,10,Carlton,Carlton,21,11,0,10,1806,1814,99.56,44
+22,Round_22,11,St Kilda,St Kilda,21,9,0,12,1856,1826,101.64,36
+22,Round_22,12,GW Sydney,GWS Giants,21,9,0,12,1861,1881,98.94,36
+22,Round_22,13,Nth Melbourne,North Melbourne,21,9,0,12,1752,1927,90.92,36
+22,Round_22,14,Gold Coast,Gold Coast Suns,21,8,0,13,1855,1953,94.98,32
+22,Round_22,15,Port Adelaide,Port Adelaide,21,6,0,15,1643,1821,90.23,24
+22,Round_22,16,West Coast,West Coast Eagles,21,4,0,17,1513,2115,71.54,16
+22,Round_22,17,Richmond,Richmond,21,3,0,18,1362,2146,63.47,12
+22,Round_22,18,Essendon,Essendon,21,2,0,19,1430,2261,63.25,8
+23,Round_23,1,Fremantle,Fremantle,22,19,0,3,2204,1547,142.47,76
+23,Round_23,2,Sydney,Sydney Swans,22,17,0,5,2420,1799,134.52,68
+23,Round_23,3,Brisbane,Brisbane Lions,22,15,0,7,2340,1958,119.51,60
+23,Round_23,4,Hawthorn,Hawthorn,22,14,2,6,2153,1836,117.27,60
+23,Round_23,5,Melbourne,Melbourne,22,15,0,7,2214,1991,111.2,60
+23,Round_23,6,Geelong,Geelong Cats,22,14,0,8,2222,1849,120.17,56
+23,Round_23,7,Adelaide,Adelaide,22,14,0,8,2012,1748,115.1,56
+23,Round_23,8,Collingwood,Collingwood,22,12,2,8,1925,1815,106.06,52
+23,Round_23,9,Wstn Bulldogs,Western Bulldogs,22,12,1,9,1793,1905,94.12,50
+23,Round_23,10,Carlton,Carlton,22,11,1,10,1888,1896,99.58,46
+23,Round_23,11,St Kilda,St Kilda,22,10,0,12,1950,1871,104.22,40
+23,Round_23,12,GW Sydney,GWS Giants,22,10,0,12,1972,1938,101.75,40
+23,Round_23,13,Nth Melbourne,North Melbourne,22,9,0,13,1862,2052,90.74,36
+23,Round_23,14,Gold Coast,Gold Coast Suns,22,8,0,14,1908,2048,93.16,32
+23,Round_23,15,Port Adelaide,Port Adelaide,22,6,0,16,1699,1953,86.99,24
+23,Round_23,16,West Coast,West Coast Eagles,22,4,0,18,1570,2226,70.53,16
+23,Round_23,17,Richmond,Richmond,22,3,0,19,1407,2240,62.81,12
+23,Round_23,18,Essendon,Essendon,22,2,0,20,1506,2373,63.46,8
+24,Round_24,1,Fremantle,Fremantle,23,19,0,4,2286,1666,137.21,76
+24,Round_24,2,Sydney,Sydney Swans,23,18,0,5,2543,1869,136.06,72
+24,Round_24,3,Brisbane,Brisbane Lions,23,16,0,7,2499,2054,121.67,64
+24,Round_24,4,Hawthorn,Hawthorn,23,15,2,6,2260,1881,120.15,64
+24,Round_24,5,Geelong,Geelong Cats,23,15,0,8,2355,1925,122.34,60
+24,Round_24,6,Adelaide,Adelaide,23,15,0,8,2169,1849,117.31,60
+24,Round_24,7,Melbourne,Melbourne,23,15,0,8,2301,2099,109.62,60
+24,Round_24,8,Wstn Bulldogs,Western Bulldogs,23,13,1,9,1901,1992,95.43,54
+24,Round_24,9,Collingwood,Collingwood,23,12,2,9,2021,1974,102.38,52
+24,Round_24,10,Carlton,Carlton,23,12,1,10,2007,1978,101.47,50
+24,Round_24,11,St Kilda,St Kilda,23,10,0,13,2030,1974,102.84,40
+24,Round_24,12,GW Sydney,GWS Giants,23,10,0,13,2073,2095,98.95,40
+24,Round_24,13,Gold Coast,Gold Coast Suns,23,9,0,14,2011,2128,94.5,36
+24,Round_24,14,Nth Melbourne,North Melbourne,23,9,0,14,1932,2175,88.83,36
+24,Round_24,15,Port Adelaide,Port Adelaide,23,7,0,16,1804,2048,88.09,28
+24,Round_24,16,West Coast,West Coast Eagles,23,4,0,19,1615,2333,69.22,16
+24,Round_24,17,Richmond,Richmond,23,3,0,20,1483,2373,62.49,12
+24,Round_24,18,Essendon,Essendon,23,2,0,21,1601,2478,64.61,8
